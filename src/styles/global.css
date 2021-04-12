@@ -1,0 +1,15 @@
+a {
+    text-shadow: none;
+    background-image: none;
+}
+
+header a {
+    color:#3B413C;
+    font-weight:bold;
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}

@@ -2,7 +2,13 @@ a {
     text-shadow: none;
     background-image: none;
 }
-
+header{
+    background: linear-gradient(rgba(14, 25, 23, 0.6), rgba(14, 25, 23, 0.6)), url('/Leaves.jpg');
+    height: 300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 header a {
     color:#3B413C;
     font-weight:bold;
@@ -12,4 +18,28 @@ header a:hover{
     text-decoration: underline;
     cursor: pointer;
 
+}
+header h2, header h3{
+    color: #fff;
+}
+
+header h2{
+    font-size:50px;
+    padding-bottom:10px;
+    
+}
+
+header h3{
+    font-size:35px;
+}
+nav li a{
+    color:#a3c2a1;
+}
+nav ul li {
+    margin-bottom: 0px;
+}
+nav {
+    background-color:#0e1917;
+    width:100%;
+    padding:8px;
 }

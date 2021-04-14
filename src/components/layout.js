@@ -10,8 +10,7 @@ const ListLink = props => (
 export default function Layout({children}){
     return(
         <div>
-            <header style={{ padding: `.5rem 1rem`, marginBottom: `2rem`, backgroundColor:`#94D1BE`}}>
-                {/* <img src={'/Liz Laffitte - Headshot - 400px.jpg'} style={{maxWidth:`125px`, borderRadius:`100%`}} /> */}
+            <header style={{ padding: `.5rem 1rem`, marginBottom: `2rem`,backgroundImage:`/Leaves.jpg` }}>
                 <Link to="/" style={{backgroundImage:`none`, textShadow:`none`}} ><h3 style={{display:`inline`, color:`#3B413C`}}>Liz Laffitte</h3></Link>
                 <ul style={{listStyle: `none`, float:`right`}}>
                     <ListLink to="#about">About</ListLink>

@@ -1,3 +1,6 @@
+html{
+    background-color: #eee;
+}
 a {
     text-shadow: none;
     background-image: none;
@@ -5,9 +8,7 @@ a {
 header{
     background: linear-gradient(rgba(14, 25, 23, 0.6), rgba(14, 25, 23, 0.6)), url('/Leaves.jpg');
     height: 300px;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+    
 }
 header a {
     color:#3B413C;
@@ -42,4 +43,13 @@ nav {
     background-color:#0e1917;
     width:100%;
     padding:8px;
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    margin-bottom: 2rem;
+    text-align:center;
+}
+main section{
+   display: flex;
+   justify-content: space-between; 
 }

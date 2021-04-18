@@ -9,20 +9,20 @@ const ListLink = props => (
 
 export default function Layout({children}){
     return(
-        <div>
-            <header style={{textAlign:'center',marginBottom: `2rem` }}>
+        <div id="content">
+            <header style={{textAlign:'center'}}>
                <div style={{padding: `.5rem 0`}}>
                     <h2>Liz Laffitte</h2>
                 <hr style={{backgroundColor:`white`, height:`4px`, width:`200px`, margin:`auto`}} />
                 <h3>Software Engineer</h3>
                 </div>
-                <nav style={{}}>
-                    <ul style={{listStyle: `none`,marginBottom:`0px`}}>
-                        <ListLink to="#about">About</ListLink>
-                        <ListLink to="#contact">Contact</ListLink>
-                    </ul>
-                </nav>
             </header>
+            <nav>
+                <ul style={{listStyle: `none`,marginBottom:`0px`}}>
+                    <ListLink to="#about">About</ListLink>
+                    <ListLink to="#contact">Contact</ListLink>
+                </ul>
+            </nav>
             <main style={{padding: `0 1rem`}}>
                 {children}
             </main>

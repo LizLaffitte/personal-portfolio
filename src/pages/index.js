@@ -22,7 +22,7 @@ export default function Home() {
     </InnerSection>
     <InnerSection sectionId="contact" >
       <div >
-        <p style={{textAlign:"center"}}>Find me on LinkedIn, Twitter and GitHub. Send me an email.</p>
+        <p style={{textAlign:"center"}}>Find me on <a href="https://www.linkedin.com/in/lizlaffitte/" target="_blank">LinkedIn</a>, <a href="https://twitter.com/MrsSquishyface" target="_blank">Twitter</a> and <a href="https://github.com/lizlaffitte" target="_blank">GitHub</a>.</p>
         <Form />
       </div>
       </InnerSection>

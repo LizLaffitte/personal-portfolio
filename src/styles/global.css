@@ -6,7 +6,7 @@ a {
     background-image: none;
 }
 header{
-    background: linear-gradient(rgba(14, 25, 23, 0.6), rgba(14, 25, 23, 0.6)), url('/Leaves.jpg');
+    background: linear-gradient(rgba(14, 25, 23, 0.6), rgba(14, 25, 23, 0.6)), url('../images/Leaves.jpg');
     height: 300px;
     
 }

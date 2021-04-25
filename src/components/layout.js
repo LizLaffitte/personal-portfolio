@@ -3,7 +3,7 @@ import {Link} from "gatsby"
 
 const ListLink = props => (
     <li style={{display:`inline-block`, marginRight:`1rem` }}>
-        <Link to={PushSubscriptionOptions.to}>{props.children}</Link>
+        <Link to={props.to}>{props.children}</Link>
     </li>
 )
 

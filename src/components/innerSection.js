@@ -1,9 +1,9 @@
 import React from "react"
 
-export default function InnerSection({children}, props){
+export default function InnerSection( props){
     return(
-        <section style={{maxWidth:`960px`, margin:`0 auto 40px`, backgrounColor:props.bgColor}} id={props.id}  >
-            {children}
+        <section id={props.sectionId} class={props.sectionClasses} style={{maxWidth:`960px`, margin:`0 auto 40px`, backgroundColor:props.bgColor}}  >
+            {props.children}
         </section>
     )
 }

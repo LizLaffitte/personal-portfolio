@@ -48,6 +48,7 @@ nav {
     position: -webkit-sticky;
     margin-bottom: 2rem;
     text-align:center;
+    z-index: 99;
 }
 main section div.flx{
    display: flex;
@@ -61,5 +62,43 @@ main section div.flx{
 }
 
 main section h2{
+    text-align:center;
+}
+form{
+    max-width:700px;
+    margin:auto;
+    background-color: #a3c2a1;
+    border-radius: 10px;
+    padding:20px;
+    border: 2px solid #0e1917;
+    overflow: hidden;
+}
+form input, form textarea{
+    width:100%;
+    border-radius: 5px;
+    border:none;
+    margin-bottom:5px;
+    
+}
+form input:focus-visible, form textarea:focus-visible, form input:hover, form textarea:hover{
+    box-shadow:0 4px 6px -1px rgba(14,25,23,0.25),0 2px 4px -1px rgba(14,25,23,0.06);
+    outline:none;
+}
+form label{
+    color:white;
+}
+form button{
+    float:right;
+    background-color: #3a5b3d;
+    color:white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+form button:hover{
+    background-color: #0e1917;
+
+}
+.center{
     text-align:center;
 }

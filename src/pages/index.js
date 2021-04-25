@@ -1,12 +1,14 @@
 import React from "react"
 import Layout from "../components/layout"
 import InnerSection from "../components/innerSection"
+import Form from "../components/form"
 import { StaticImage } from "gatsby-plugin-image"
+
 
 export default function Home() {
   return (
   <Layout>
-    <InnerSection >
+    <InnerSection sectionId="about">
       <h2>About</h2>
       
       <div class="flx">
@@ -18,9 +20,10 @@ export default function Home() {
           </div>
       </div>
     </InnerSection>
-    <InnerSection >
-      <div id={`contact`}>
-        Find me on LinkedIn, Twitter and GitHub. Send me an email.
+    <InnerSection sectionId="contact" >
+      <div >
+        <p style={{textAlign:"center"}}>Find me on LinkedIn, Twitter and GitHub. Send me an email.</p>
+        <Form />
       </div>
       </InnerSection>
     </Layout>

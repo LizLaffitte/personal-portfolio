@@ -49,7 +49,17 @@ nav {
     margin-bottom: 2rem;
     text-align:center;
 }
-main section{
+main section div.flx{
    display: flex;
    justify-content: space-between; 
+   gap: 20px;
+   flex-wrap: wrap;
+}
+.flx div.txt{
+    flex-basis: 60%;
+    flex-grow:2;
+}
+
+main section h2{
+    text-align:center;
 }

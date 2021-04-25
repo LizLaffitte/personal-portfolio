@@ -7,14 +7,22 @@ export default function Home() {
   return (
   <Layout>
     <InnerSection >
-      <StaticImage src="../images/liz-laffitte-headshot.jpg" width={200} alt="Liz Laffitte Headshot" />
-      <div>
-        <p>I am a software engineer working in digital marketing.</p>
+      <h2>About</h2>
+      
+      <div class="flx">
+      <StaticImage src="../images/Liz-Laffitte.png"  objectPosition="50% top" alt="Liz Laffitte Headshot" style={{minWidth:"290px", flexBasis:"37%"}} />  
+          <div class="txt">
+            <p>I'm passionate about helping people, building user-centric software and learning new things.</p>
+            <p>I was first introduced to programming when I was tasked with building HTML emails that look good in all versions of Outlook. I was hooked! Several programming languages, frameworks and one software engineering bootcamp later, I am looking for my first full-time software engineering position.</p>
+            <p>When I'm not working on a project or leaning something new, I enjoy geocaching, cross stitching and spending time with my family. </p>
+          </div>
       </div>
     </InnerSection>
+    <InnerSection >
       <div id={`contact`}>
         Find me on LinkedIn, Twitter and GitHub. Send me an email.
       </div>
+      </InnerSection>
     </Layout>
     )
 }

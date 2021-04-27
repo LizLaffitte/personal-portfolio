@@ -1,7 +1,7 @@
 import React from "react"
 export default function Form() {
     return (
-<form method="post" action="#">
+<form method="post" action="https://formspree.io/f/myylkgqv">
   <label>
     Name<br />
     <input type="text" name="name" id="name" />

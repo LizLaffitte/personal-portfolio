@@ -56,6 +56,10 @@ main section div.flx{
    gap: 20px;
    flex-wrap: wrap;
 }
+main h2{
+    margin-bottom:2rem;
+    color:#0e1917;
+}
 .flx div.txt{
     flex-basis: 60%;
     flex-grow:2;
@@ -101,4 +105,7 @@ form button:hover{
 }
 .center{
     text-align:center;
+}
+.portfolio-project{
+    flex-basis:50%;
 }

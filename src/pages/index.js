@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import InnerSection from "../components/innerSection"
 import Form from "../components/form"
 import { StaticImage } from "gatsby-plugin-image"
+import Project from "../components/project"
 
 
 export default function Home() {
@@ -21,7 +22,15 @@ export default function Home() {
       </div>
     </InnerSection>
     <InnerSection sectionId="projects" >
-
+      <h2>Projects</h2>
+      <div class="flx">
+        <Project >
+          <StaticImage src="../images/dads-and-diapers.png"  />  
+            <h3>Dads & Diapers</h3>
+            <p>A React application designed to help parents of young children find and review public places based on the availability of changing tables. Users can add locations, view reviews and leave reviews of their own. For each location, users are asked whether changing rooms are available in mens and women's rooms, and whether they are clean and in good working order.</p>
+            <a href="https://dads-and-diapers.herokuapp.com/" target="_blank">Live</a>
+        </Project>
+      </div>
     </InnerSection>
     <InnerSection sectionId="contact" >
     <h2>Contact</h2>

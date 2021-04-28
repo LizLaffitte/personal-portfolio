@@ -21,7 +21,7 @@ export default function Home() {
           </div>
       </div>
     </InnerSection>
-    <InnerSection sectionId="projects" >
+    {/* <InnerSection sectionId="projects" >
       <h2>Projects</h2>
       <div class="flx">
         <Project >
@@ -31,7 +31,7 @@ export default function Home() {
             <a href="https://dads-and-diapers.herokuapp.com/" target="_blank">Live</a>
         </Project>
       </div>
-    </InnerSection>
+    </InnerSection> */}
     <InnerSection sectionId="contact" >
     <h2>Contact</h2>
     <p>Questions? Comments? Excellent puns? Connect with me online or send me a message via the form.</p>

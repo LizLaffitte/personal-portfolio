@@ -2,7 +2,7 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 export default function Project(props) {
     return (
-        <div class="portfolio-project" style={{flexBasis:`45%`, fontSize:`14px`}}>
+        <div className="portfolio-project" style={{display:`flex`, justifyContent:`space-between`}}>
             {props.children}
         </div>
     )}

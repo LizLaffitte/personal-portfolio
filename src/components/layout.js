@@ -20,12 +20,12 @@ export default function Layout({children}){
             <nav>
                 <ul style={{listStyle: `none`,marginBottom:`0px`}}>
                     <ListLink to="#about">About</ListLink>
-                    {/* <ListLink to="#projects">Projects</ListLink> */}
+                    <ListLink to="#projects">Projects</ListLink>
                     <ListLink to="#contact">Contact</ListLink>
 
                 </ul>
             </nav>
-            <main style={{padding: `0 1rem`}}>
+            <main>
                 {children}
             </main>
             {console.log("I'm looking for a new opportunity.")}

@@ -1,6 +1,6 @@
-html{
+/* html{
     background-color: #eee;
-}
+} */
 a {
     text-shadow: none;
     background-image: none;
@@ -22,6 +22,7 @@ header a:hover{
 }
 header h2, header h3{
     color: #fff;
+   
 }
 
 header h2{
@@ -46,7 +47,6 @@ nav {
     position: sticky;
     top: 0;
     position: -webkit-sticky;
-    margin-bottom: 2rem;
     text-align:center;
     z-index: 99;
 }
@@ -108,7 +108,22 @@ form button:hover{
 }
 .portfolio-project{
     flex-basis:50%;
+    font-size:17px;
 }
+
 section:last-child{
     border-bottom: none;
+}
+.btn-cont{
+    display: flex;
+    gap:2%;
+}
+.btn-cont .btn {
+    background-color: #767B91;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+section h3{
+    margin-top: 0px;
 }

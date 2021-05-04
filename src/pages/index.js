@@ -2,11 +2,13 @@ import React from "react"
 import Layout from "../components/layout"
 import InnerSection from "../components/innerSection"
 import Form from "../components/form"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, StaticImage  } from "gatsby-plugin-image"
 import Project from "../components/project"
+import { graphql } from "gatsby"
 
 
-export default function Home() {
+export default function Home({data}) {
+
   return (
   <Layout>
     <InnerSection sectionId="about">
@@ -23,17 +25,25 @@ export default function Home() {
     </InnerSection>
     <InnerSection sectionId="projects" bgC="#eee" >
       <h2>Projects</h2>
-        <Project >
-        <div style={{flexBasis:`45%`}}>
-            <h3>Dads & Diapers</h3>
-            <p>A React application designed to help parents of young children find and review public places based on the availability of changing tables. Users can add locations, view reviews and leave reviews of their own. For each location, users are asked whether changing rooms are available in mens and women's rooms, and whether they are clean and in good working order.</p>
-            <div className="btn-cont">
-              <a className="btn" href="https://dads-and-diapers.herokuapp.com/" rel="noreferrer" target="_blank">Live</a> <a className="btn" href="https://github.com/LizLaffitte/dads-and-diapers-frontend" target="_blank">GitHub</a> <a className="btn" href="https://www.youtube.com/watch?v=RE7cqHneTZI" target="_blank">Demo</a>
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        
+        <div className="portfolio-project" style={{display:`flex`, justifyContent:`space-between`}}>
+          {console.log(node.frontmatter.featured)}
+          <div style={{flexBasis:`45%`}}>
+            <h3>{node.frontmatter.title}</h3>
+              <p>{node.internal.content}</p>
+              <div className="btn-cont">
+                <a className="btn" href={node.frontmatter.live } rel="noreferrer" target="_blank">Live</a>
+                <a className="btn" href={node.frontmatter.code} rel="noreferrer" target="_blank">GitHub</a>
+                <a className="btn" rel="noreferrer" href={node.frontmatter.demo} target="_blank">Demo</a>
               </div>
           </div>
-          <StaticImage src="../images/dads-and-diapers.png" objectFit='contain' alt="Dads & Diapers screenshot" style={{flexBasis:`45%`}}  />  
-        
-        </Project>
+          <div style={{flexBasis:`45%`}}>
+          
+            <GatsbyImage image={getImage(node.frontmatter.featuredImage.childImageSharp.gatsbyImageData)} style={{flexBasis:`45%`}} objectFit='contain' />
+          </div>
+        </div>
+        ))}
     </InnerSection>
     <InnerSection sectionId="contact" >
     <h2>Contact</h2>
@@ -47,3 +57,30 @@ export default function Home() {
     </Layout>
     )
 }
+
+export const query = graphql`
+query MyQuery {
+  allMarkdownRemark {
+    edges {
+      node {
+        id
+        internal {
+          content
+        }
+        frontmatter {
+          title
+          live
+          code
+          demo
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+`

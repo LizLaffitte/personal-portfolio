@@ -123,6 +123,11 @@ section:last-child{
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
+    box-shadow:0 4px 6px -1px rgba(14,25,23,0.25),0 2px 4px -1px rgba(14,25,23,0.06);
+}
+.btn-cont .btn:hover{
+    background-color: #231123;
+    box-shadow:none;
 }
 section h3{
     margin-top: 0px;

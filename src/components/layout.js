@@ -1,5 +1,6 @@
 import React from "react"
 import {Link} from "gatsby"
+import { Helmet } from "react-helmet"
 
 const ListLink = props => (
     <li style={{display:`inline-block`, marginRight:`1rem` }}>
@@ -10,6 +11,11 @@ const ListLink = props => (
 export default function Layout({children}){
     return(
         <div id="content">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Liz Laffitte | Software Engineer | Personal Portfolio</title>
+                <link rel="canonical" href="https://lizlaffitteportfolio.gatsbyjs.io/" />
+            </Helmet>
             <header style={{textAlign:'center'}}>
                <div style={{padding: `.5rem 0`}}>
                     <h2>Liz Laffitte</h2>

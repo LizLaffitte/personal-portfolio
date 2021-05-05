@@ -7,6 +7,7 @@ import Project from "../components/project"
 import { graphql } from "gatsby"
 
 
+
 export default function Home({data}) {
 
   return (

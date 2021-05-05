@@ -16,7 +16,7 @@ export default function Home({data}) {
       <h2>About</h2>
       
       <div className="flx">
-      <StaticImage src="../images/Liz-Laffitte.png"  objectPosition="50% top" alt="Liz Laffitte Headshot" style={{minWidth:"290px", flexBasis:"37%"}} />  
+      <StaticImage src="../images/Liz-Laffitte.png"  objectPosition="50% top" alt="Liz Laffitte Headshot" style={{minWidth:"290px", flexBasis:'35%', flexGrow:'3'}} />  
           <div className="txt">
             <p>I'm passionate about helping people, building user-centric software and learning new things.</p>
             <p>I was first introduced to programming when I was tasked with building HTML emails that look good in all versions of Outlook. I was hooked. Several programming languages, frameworks and one software engineering bootcamp later, I am looking for my first full-time software engineering position.</p>

@@ -26,23 +26,23 @@ export default function Home({data}) {
     <InnerSection sectionId="projects" bgC="#eee" >
       <h2>Projects</h2>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        
-        <div className="portfolio-project" style={{display:`flex`, justifyContent:`space-between`}}>
-          {console.log(node.frontmatter.featured)}
-          <div style={{flexBasis:`45%`}}>
-            <h3>{node.frontmatter.title}</h3>
-              <p>{node.internal.content}</p>
-              <div className="btn-cont">
-                <a className="btn" href={node.frontmatter.live } rel="noreferrer" target="_blank">Live</a>
-                <a className="btn" href={node.frontmatter.code} rel="noreferrer" target="_blank">GitHub</a>
-                <a className="btn" rel="noreferrer" href={node.frontmatter.demo} target="_blank">Demo</a>
-              </div>
-          </div>
-          <div style={{flexBasis:`45%`}}>
+        <Project node={node} key={node.key} />
+        // <div className="portfolio-project" style={{display:`flex`, justifyContent:`space-between`}}>
+        //   {console.log(node.frontmatter.featured)}
+        //   <div style={{flexBasis:`45%`}}>
+        //     <h3>{node.frontmatter.title}</h3>
+        //       <p>{node.internal.content}</p>
+        //       <div className="btn-cont">
+        //         <a className="btn" href={node.frontmatter.live } rel="noreferrer" target="_blank">Live</a>
+        //         <a className="btn" href={node.frontmatter.code} rel="noreferrer" target="_blank">GitHub</a>
+        //         <a className="btn" rel="noreferrer" href={node.frontmatter.demo} target="_blank">Demo</a>
+        //       </div>
+        //   </div>
+        //   <div style={{flexBasis:`45%`}}>
           
-            <GatsbyImage image={getImage(node.frontmatter.featuredImage.childImageSharp.gatsbyImageData)} style={{flexBasis:`45%`}} objectFit='contain' />
-          </div>
-        </div>
+        //     <GatsbyImage image={getImage(node.frontmatter.featuredImage.childImageSharp.gatsbyImageData)} alt={node.frontmatter.title + "screen shot"} style={{flexBasis:`45%`}} objectFit='contain' />
+        //   </div>
+        // </div>
         ))}
     </InnerSection>
     <InnerSection sectionId="contact" >

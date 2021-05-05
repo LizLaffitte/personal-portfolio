@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import InnerSection from "../components/innerSection"
 import Form from "../components/form"
-import { GatsbyImage, getImage, StaticImage  } from "gatsby-plugin-image"
+import { StaticImage  } from "gatsby-plugin-image"
 import Project from "../components/project"
 import { graphql } from "gatsby"
 
@@ -55,7 +55,6 @@ query MyQuery {
           title
           live
           code
-          demo
           featuredImage {
             childImageSharp {
               gatsbyImageData

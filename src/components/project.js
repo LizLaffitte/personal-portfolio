@@ -11,12 +11,11 @@ export default function Project({node, key}) {
               <div className="btn-cont">
                 <a className="btn" href={node.frontmatter.live } rel="noreferrer" target="_blank">Live</a>
                 <a className="btn" href={node.frontmatter.code} rel="noreferrer" target="_blank">GitHub</a>
-                <a className="btn" rel="noreferrer" href={node.frontmatter.demo} target="_blank">Demo</a>
               </div>
           </div>
           <div style={{flexBasis:`45%`}}>
           
-            <GatsbyImage image={getImage(node.frontmatter.featuredImage.childImageSharp.gatsbyImageData)} alt={node.frontmatter.title + "screen shot"} style={{flexBasis:`45%`}} objectFit='contain' />
+            <GatsbyImage image={getImage(node.frontmatter.featuredImage.childImageSharp.gatsbyImageData)} alt={node.frontmatter.title + "screen shot"} style={{flexBasis:`45%`, border:'1px solid #0e1917'}} objectFit='cover' />
           </div>
         </div>
     )}

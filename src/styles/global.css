@@ -132,3 +132,18 @@ section:last-child{
 section h3{
     margin-top: 0px;
 }
+.portfolio-project {
+    margin-bottom:50px;
+}
+.portfolio-project:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.portfolio-project:nth-child(odd) .btn-cont .btn{
+    background-color: #A3C2A1;
+
+}
+
+.portfolio-project:nth-child(odd) .btn-cont .btn:hover{
+    background-color: #3A5B3D;
+    box-shadow:none;
+}

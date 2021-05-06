@@ -6,7 +6,7 @@ export default function Project({node, key}) {
   const isDeployed = node.frontmatter.live
     return (
         <div className="portfolio-project" key={key} style={{display:`flex`, justifyContent:`space-between`}}>
-          <div style={{flexBasis:`45%`}}>
+          <div>
             <h3>{node.frontmatter.title}</h3>
               <p>{node.internal.content}</p>
               <div className="btn-cont">
@@ -16,8 +16,7 @@ export default function Project({node, key}) {
                 <a className="btn" href={node.frontmatter.code} rel="noreferrer" target="_blank">GitHub</a>
               </div>
           </div>
-          <div style={{flexBasis:`45%`}}>
-          
+          <div>
             <GatsbyImage image={getImage(node.frontmatter.featuredImage.childImageSharp.gatsbyImageData)} alt={node.frontmatter.title + "screen shot"} style={{flexBasis:`45%`, border:'1px solid #0e1917'}} objectFit='cover' />
           </div>
         </div>

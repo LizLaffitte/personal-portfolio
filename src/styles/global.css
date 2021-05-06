@@ -64,7 +64,9 @@ main h2{
     flex-grow:2;
     padding-left:20px;
 }
-
+.flx div.gatsby-image-wrapper{
+    flex-basis:35%;
+}
 main section h2{
     text-align:center;
 }
@@ -146,4 +148,27 @@ section h3{
 .portfolio-project:nth-child(odd) .btn-cont .btn:hover{
     background-color: #3A5B3D;
     box-shadow:none;
+}
+.portfolio-project > div {
+    flex-basis:45%;
+}
+@media screen and (max-width:900px) {
+    .portfolio-project  {
+        flex-direction: column-reverse;
+        gap:20px;
+    }
+    .portfolio-project:nth-child(odd){
+        flex-direction: column-reverse;
+    }
+    .flx div.gatsby-image-wrapper{
+        flex-basis:25%;
+        flex-grow:2;
+    }
+}
+@media screen and (max-width:600px) {
+    .flx div.txt{
+        flex-basis: 80%;
+        padding-left: 0%;
+        
+    }
 }

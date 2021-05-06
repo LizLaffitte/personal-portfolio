@@ -3,13 +3,16 @@ import { GatsbyImage, getImage  } from "gatsby-plugin-image"
 
 
 export default function Project({node, key}) {
+  const isDeployed = node.frontmatter.live
     return (
         <div className="portfolio-project" key={key} style={{display:`flex`, justifyContent:`space-between`}}>
           <div style={{flexBasis:`45%`}}>
             <h3>{node.frontmatter.title}</h3>
               <p>{node.internal.content}</p>
               <div className="btn-cont">
-                <a className="btn" href={node.frontmatter.live } rel="noreferrer" target="_blank">Live</a>
+                {isDeployed ? (
+                  <a className="btn" href={node.frontmatter.live } rel="noreferrer" target="_blank">Live</a>) : <br />
+                }
                 <a className="btn" href={node.frontmatter.code} rel="noreferrer" target="_blank">GitHub</a>
               </div>
           </div>

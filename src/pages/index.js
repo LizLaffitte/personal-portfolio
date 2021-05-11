@@ -20,7 +20,7 @@ export default function Home({data}) {
           <div className="txt">
             <p>I'm passionate about helping people, building user-centric software and learning new things.</p>
             <p>I was first introduced to programming when I was tasked with building HTML emails that look good in all versions of Outlook. I was hooked. Several programming languages, frameworks and one software engineering bootcamp later, I am looking for my first full-time software engineering position.</p>
-            <p>When I'm not working on a project or leaning something new, I enjoy geocaching, cross stitching and spending time with my family. </p>
+            <p>When I'm not working on a project or learning something new, I enjoy geocaching, cross stitching and spending time with my family. </p>
           </div>
       </div>
     </InnerSection>

@@ -76,6 +76,18 @@ main section div.flx{
    justify-content: space-between; 
    flex-wrap: wrap;
 }
+section{
+    padding: 30px 0;
+}
+.bg-g{
+    background-color: #eee;
+}
+section > div {
+    max-width: 960px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+    box-sizing: content-box;
+}
 main h2{
     margin-bottom:2rem;
     color:#0e1917;

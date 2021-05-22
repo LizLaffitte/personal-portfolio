@@ -24,7 +24,7 @@ export default function Home({data}) {
           </div>
       </div>
     </InnerSection>
-    <InnerSection sectionId="projects" bgC="#eee" >
+    <InnerSection sectionId="projects" sectionClasses="bg-g" >
       <h2>Projects</h2>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <Project node={node} key={node.key} />

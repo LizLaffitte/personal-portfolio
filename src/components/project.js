@@ -5,7 +5,7 @@ import { GatsbyImage, getImage  } from "gatsby-plugin-image"
 export default function Project({node, key}) {
   const isDeployed = node.frontmatter.live
     return (
-        <div className="portfolio-project" key={key} style={{display:`flex`, justifyContent:`space-between`}}>
+        <div className="portfolio-project" key={key} >
           <div>
             <h3>{node.frontmatter.title}</h3>
               <p>{node.internal.content}</p>
@@ -17,7 +17,7 @@ export default function Project({node, key}) {
               </div>
           </div>
           <div>
-            <GatsbyImage image={getImage(node.frontmatter.featuredImage.childImageSharp.gatsbyImageData)} alt={node.frontmatter.title + "screen shot"} style={{flexBasis:`45%`, border:'1px solid #0e1917'}} objectFit='cover' />
+            <GatsbyImage image={getImage(node.frontmatter.featuredImage.childImageSharp.gatsbyImageData)} alt={node.frontmatter.title + "screen shot"}  objectFit='cover' />
           </div>
         </div>
     )}

@@ -92,6 +92,14 @@ main h2{
     margin-bottom:2rem;
     color:#0e1917;
 }
+.portfolio-project{
+    display:flex;
+    justify-content: space-between;
+}
+.portfolio-project > div:nth-child(2) .gatsby-image-wrapper {
+    flex-basis:45%;
+    border:1px solid #0e1917;
+}
 .flx div.txt{
     flex-basis: 60%;
     flex-grow:2;

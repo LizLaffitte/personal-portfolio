@@ -67,6 +67,10 @@ nav ul{
     list-style: none;
     margin-bottom: 0px;
 }
+#headshot{
+    min-width:200px;
+    max-width:400px;
+}
 main section div.flx{
    display: flex;
    justify-content: space-between; 
@@ -86,6 +90,9 @@ main h2{
 }
 main section h2{
     text-align:center;
+}
+#contact p{
+    text-align: center;
 }
 form{
     max-width:700px;

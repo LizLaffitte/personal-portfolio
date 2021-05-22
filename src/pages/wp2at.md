@@ -1,7 +1,6 @@
 ---
 title: "WP2AT"
 featuredImage: ../images/wp2at.jpg
-# live: 
 code: "https://github.com/LizLaffitte/wp2at"
 ---
 

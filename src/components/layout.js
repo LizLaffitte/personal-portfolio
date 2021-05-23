@@ -15,6 +15,7 @@ export default function Layout({children}){
                 <meta charSet="utf-8" />
                 <title>Liz Laffitte | Software Engineer | Personal Portfolio</title>
                 <link rel="canonical" href="https://lizlaffitteportfolio.gatsbyjs.io/" />
+                <meta property="og:image" content="/images/Portfolio_Image.jpg" />
             </Helmet>
             <header>
                <div>
